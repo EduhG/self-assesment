@@ -6,7 +6,7 @@ html, body{
     height: 100%;
     padding: 0;
     margin: 0;
-    background:#bdc3c7;
+    background: #34495e !important;
     font-family: 'Open Sans', sans-serif;
     color: #395870;
 }
@@ -66,7 +66,58 @@ h1, h2, h3, h4, h5, h6 {
     background: #34495e;
     width: 100%;
     color: #E5E3DB;
-    border-bottom: 7px solid #DADFE1;
+    border-bottom: 0px solid #DADFE1;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.logo {
+    height: 100%;
+}
+
+.nav {
+    position: relative;
+    top: 20%;
+    display: inline-block;
+    float: right;
+}
+
+.nav ul{
+    display: inline-block;
+    float: right;
+}
+
+.nav li{
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    width: 150;
+    text-align: center;
+    margin: 10px;
+}
+
+.nav li:hover, .nav li:active, .nav li:focus{
+    background: #DADFE1;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    color: #34495e;
+}
+
+.nav li:hover a, .nav li:active a, .nav li:focus a{
+    color: #34495e;
+}
+
+.nav li.active{
+    background: #DADFE1;
+    color: #34495e !important;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
 
 #content {
@@ -74,14 +125,233 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #content {
-    background: transparent;
+    background:#bdc3c7;
     width: 100%;
     display: inline-block;;
 }
 
+.name{
+    text-align: center;
+}
+
+.name-img {
+    height: 250px;
+    width: 80%;
+}
+
+.burner {
+    position: relative;
+    height: 550px;
+    border-bottom: 10px solid #34495e;
+}
+
+#burner-bg {
+    background: url("../images/synthetic-turf-fields.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+}
+
+#burner-bg1 {
+    background: url("../images/7.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+}
+
+#burner-bg2 {
+    background: url("../images/1.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+}
+
+@keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.burner div:nth-of-type(1) {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+.burner div:nth-of-type(2) {
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+.burner div:nth-of-type(3) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -webkit-backface-visibility: hidden;
+}
+
+.burner div {
+    animation-name: backgroundchangeFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+    -webkit-animation-name: backgroundchangeFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+}
+
+.slanted-right {
+    background: transparent !important;
+    position: relative;
+    display: inline-block;
+    padding: 1em 5em 1em 1em;
+    overflow: hidden;
+    color: #fff;
+    height: 100%;
+    width: 40%;
+}
+.slanted-right:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(52, 73, 94, 0.3) !important;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(-35deg);
+    -ms-transform: skew(-35deg);
+    transform: skew(-35deg);
+    z-index: 3;
+    border-right: 0px solid #DADFE1; /*#81CFE0;*/
+    
+}
+
+.padding {
+    padding: 0 100px;
+}
+
+.reservation {
+    padding: 10px;
+    background: #34495e;
+}
+
+form {
+    background: #34495e;
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+input, select, textarea {
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+.reservation-info {
+    padding: 20px 20px 0 20px;
+}
+.reservation-info label {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reservation-info textarea {
+    height: 100px;
+}
+
+.reservation-info input,
+.reservation-info select,
+.reservation-info textarea {
+    background: #E5E3DB;
+    border: 1px solid #c6c7cc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    color: #636466;
+    padding: 6px;
+    margin-top: 6px;
+    width: 100%;
+}
+.reservation-action {
+    background: #f0f0f2;
+    border-top: 1px solid #c6c7cc;
+    padding: 10px 20px;
+}
+.reservation-action .btn {
+    background: linear-gradient(#49708f, #293f50);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    padding: 8px 16px;
+    width: 150px;
+    text-align: center;;
+}
+
+.left-btn {
+    float: left;
+    margin-left: 2%;
+}
+
+.left-right {
+    float: right;
+}
+
+
 #footer {
     height: auto;
-    background: #34495e;
+    background: #34495e !important;
     width: 100%;
     color: #fff;
 }
