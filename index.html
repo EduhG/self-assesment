@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Youth Sports</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='stylesheet' type='text/css' href='css/main.css'/>
+ </head>
+    
+ <body>   
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                logo
+            </div>
+            
+            <div class="nav">
+                nav
+            </div>
+        </div> <!--End of Container-->
+        <div id="content">content</div> <!--End of Container-->
+        <div id="footer">footer</div> <!--End of Container-->
+     </div> <!--End of Container-->
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(event){
+            var height = $( window ).height() - $( "#header" ).height();
+            $("#content").css("min-height", height);
+        });
+
+    </script>
+
+</body>
+</html>
+        
