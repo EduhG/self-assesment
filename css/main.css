@@ -143,6 +143,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 550px;
     border-bottom: 10px solid #34495e;
+    background: url("../images/synthetic-turf-fields.jpg") no-repeat;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    margin: 0px;
+    background-size: cover;
+    background-position: center center;
 }
 
 #burner-bg {
